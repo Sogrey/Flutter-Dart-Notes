@@ -31,6 +31,7 @@ module.exports = {
     repo: "Sogrey/Flutter-Dart-Notes",
     docsRepo: "Sogrey/Flutter-Dart-Notes",
     editLinks: true,
+    docsDir: 'source',
     locales: {
       "/": {
         label: "简体中文",
