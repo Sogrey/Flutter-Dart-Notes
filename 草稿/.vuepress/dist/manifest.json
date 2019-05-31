@@ -4,7 +4,7 @@
   "start_url": "index.html",
   "display": "standalone",
   "background_color": "#2196f3",
-  "description": "插件",
+  "description": "Flutter & Dart 学习笔记",
   "theme_color": "blue",
   "icons": [
     {

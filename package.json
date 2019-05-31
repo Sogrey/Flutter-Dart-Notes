@@ -4,9 +4,9 @@
   "description": "兴趣是最好的老师，学习是不变的真理",
   "main": "index.js",
   "scripts": {
-    "dev": "vuepress dev docs",
-    "build": "vuepress build docs",
-    "deploy": "npm run build & cd docs/.vuepress/dist & git init & git add -A & git commit -m 'deploy' & git push -f https://github.com/Sogrey/Flutter-Dart-Notes.git master:gh-pages"
+    "dev": "vuepress dev source",
+    "build": "vuepress build source",
+    "deploy": "npm run build & cd Flutter-Dart-Notes/ & git init & git add -A & git commit -m 'deploy' & git push -f https://github.com/Sogrey/Flutter-Dart-Notes.git master:gh-pages"
   },
   "repository": {
     "type": "git",
