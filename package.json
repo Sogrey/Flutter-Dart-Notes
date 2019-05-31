@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "vuepress dev source",
-    "build": "vuepress build source",
+    "build": "vuepress build source --dist docs",
     "deploy": "npm run build & cd Flutter-Dart-Notes/ & git init & git add -A & git commit -m 'deploy' & git push -f https://github.com/Sogrey/Flutter-Dart-Notes.git master:gh-pages"
   },
   "repository": {
