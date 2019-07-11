@@ -17,6 +17,9 @@
   "dependencies": {
     "vuepress": "^0.14.4"
   },
+  "devDependencies": {
+    "lodash.template": ">=4.5.0"
+  },
   "bugs": {
     "url": "https://github.com/Sogrey/Flutter-Dart-Notes/issues"
   },
