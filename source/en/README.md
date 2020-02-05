@@ -1,14 +1,23 @@
-# Flutter-Dart-Notes
-兴趣是最好的老师，学习是不变的真理
-
-> 注：本系列只是本人学习记录，可共享学习，不得作为商业用途。
-
-## Dart
-
-- [x] [基本概念](https://sogrey.github.io/Flutter-Dart-Notes/dart/%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5)
-- [x] [基本数据类型](https://sogrey.github.io/Flutter-Dart-Notes/dart/%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B)
-- [x] [变量](https://sogrey.github.io/Flutter-Dart-Notes/dart/%E5%8F%98%E9%87%8F)
-- [x] [运算符（级联运算、条件运算、assert）](https://sogrey.github.io/Flutter-Dart-Notes/dart/%E8%BF%90%E7%AE%97%E7%AC%A6%EF%BC%88%E7%BA%A7%E8%81%94%E8%BF%90%E7%AE%97%E3%80%81%E6%9D%A1%E4%BB%B6%E8%BF%90%E7%AE%97%E3%80%81assert%EF%BC%89)
-
-## Flutter 
-
+---
+home: true
+heroImage: /img/photo.jpg
+actionText: Start →
+actionLink: /en/guide/
+features:
+- title: 润物无声
+  details: 只做增强不做改变，引入它不会对现有工程产生影响，如丝般顺滑。
+- title: 效率至上
+  details: 只需简单配置，即可快速进行 CRUD 操作，从而节省大量时间。
+- title: 丰富功能
+  details: 热加载、代码生成、分页、性能分析等功能一应俱全。
+#footer: MIT License | © 2019 Sogrey
+---
+::: tip 声明
+此项目仅供学习之用，不得商用，资料来源于互联网。
+:::
+---
+<!-- 自定义footer -->
+<p align="center">
+Hosted by <a href="https://pages.github.com" target="_blank" style="font-weight:bold">Github Pages</a> | <a href="https://sogrey.github.io/about/mit.html" target="_blank">MIT License</a> | © 2019 <a href="https://sogrey.github.io" target="_blank">Sogrey</a> | 如有疑问提<a href="https://github.com/Sogrey/Flutter-Dart-Notes/issues/new" target="_blank">Issue</a> 
+</p>
+<br><br>
