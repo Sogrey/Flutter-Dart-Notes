@@ -15,11 +15,11 @@ module.exports = {
       title: "Flutter Dart Notes",
       description: "notes"
     },
-    "/en/": {
-      lang: "en-US",
-      title: "Flutter Dart Notes",
-      description: "notes"
-    }
+    // "/en/": {
+    //   lang: "en-US",
+    //   title: "Flutter Dart Notes",
+    //   description: "notes"
+    // }
   },
   head: [
     ["link", {
