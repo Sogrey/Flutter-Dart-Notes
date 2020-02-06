@@ -39,13 +39,30 @@ module.exports = {
         editLinkText: "在 GitHub 上编辑此页",
         lastUpdated: "上次更新",
         nav: [{
-            text: "指南",
-            link: "/guide/"
-          },{
-            text: "参考资料",
-            link: "/guide/resources/index.html"
-          }
-        ],
+          text: "指南",
+          link: "/guide/"
+        }, {
+          text: "参考资料",
+          link: "/resources/"
+        }, {
+          text: "外链",
+          items: [{
+            text: "Flutter 官网",
+            link: "https://flutter.dev/"
+          }, {
+            text: "Flutter 中文网",
+            link: "https://flutter.cn/"
+          }, {
+            text: "Flutter Github",
+            link: "https://github.com/flutter/flutter"
+          }, {
+            text: "Flutter 官方文档",
+            link: "https://flutter.dev/docs"
+          }, {
+            text: "Flutter 官方示例",
+            link: "https://flutter.dev/showcase"
+          }]
+        }],
         sidebar: {
           "/guide/": genGuideSidebar(true)
         }
@@ -56,13 +73,12 @@ module.exports = {
         editLinkText: "Edit this page on GitHub",
         lastUpdated: "Last Updated",
         nav: [{
-            text: "Guide",
-            link: "/en/guide/"
-          },{
-            text: "Resources",
-            link: "/guide/resources/index.html"
-          }
-        ],
+          text: "Guide",
+          link: "/en/guide/"
+        }, {
+          text: "Resources",
+          link: "/guide/resources/index.html"
+        }],
         sidebar: {
           "/en/guide/": genGuideSidebar(false)
         }
@@ -80,7 +96,12 @@ function genGuideSidebar(isZh) {
     {
       title: "I.Flutter简介",
       collapsable: true,
-      children: ["I.Flutter简介/"]
+      children: [
+        "I.Flutter简介/01.Flutter 发展历史",
+        'I.Flutter简介/02.面向对象及Dart语言',
+        'I.Flutter简介/03.Flutter和其他跨平台框架对比',
+        'I.Flutter简介/04.环境搭建'
+      ]
     },
     {
       title: "II.Dart语言入门",

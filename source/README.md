@@ -3,15 +3,16 @@ home: true
 heroImage: /img/photo.jpg
 actionText: 快速开始 →
 actionLink: /guide/
-features:
-- title: 润物无声
-  details: 只做增强不做改变，引入它不会对现有工程产生影响，如丝般顺滑。
-- title: 效率至上
-  details: 只需简单配置，即可快速进行 CRUD 操作，从而节省大量时间。
-- title: 丰富功能
-  details: 热加载、代码生成、分页、性能分析等功能一应俱全。
 #footer: MIT License | © 2019 Sogrey
 ---
+<p align="center">
+<b style="font-size:40px">Design beautiful apps</b><br/>
+<b style="font-size:40px">Productively build apps</b><br/>
+<b style="font-size:40px">Create faster apps</b><br/>
+<b style="font-size:40px">Target mobile, web, & desktop apps</b><br/><br/>
+Flutter 是 Google 开源的 UI 工具包，帮助开发者通过一套代码库高效构建多平台精美应用，支持移动、Web、桌面和嵌入式平台。
+</p>
+
 ::: tip 声明
 此项目仅供学习之用，不得商用，资料来源于互联网。
 :::
