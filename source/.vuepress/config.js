@@ -101,7 +101,8 @@ function genGuideSidebar(isZh) {
         'I.Flutter简介/02.面向对象及Dart语言',
         'I.Flutter简介/03.Flutter和其他跨平台框架对比',
         'I.Flutter简介/04.环境搭建',
-        'I.Flutter简介/05.hello-world'
+        'I.Flutter简介/05.hello-world',
+        'I.Flutter简介/06.Flutter升级'
       ]
     },
     {
