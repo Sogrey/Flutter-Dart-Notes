@@ -108,7 +108,10 @@ function genGuideSidebar(isZh) {
     {
       title: "II.Dart语言入门",
       collapsable: true,
-      children: ["II.Dart语言入门/"]
+      children: [
+        "II.Dart语言入门/", //导言
+        "II.Dart语言入门/01.Dart开发环境搭建", 
+      ]
     },
     {
       title: "III.一切皆组件",
