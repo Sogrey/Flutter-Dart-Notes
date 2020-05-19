@@ -111,6 +111,10 @@ function genGuideSidebar(isZh) {
       children: [
         "II.Dart语言入门/", //导言
         "II.Dart语言入门/01.Dart开发环境搭建", 
+        "II.Dart语言入门/02.Dart 入口", 
+        "II.Dart语言入门/03.注释", 
+        "II.Dart语言入门/04.变量、常量", 
+        "II.Dart语言入门/05.命名规则", 
       ]
     },
     {
