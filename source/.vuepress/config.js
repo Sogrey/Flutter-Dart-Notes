@@ -115,6 +115,7 @@ function genGuideSidebar(isZh) {
         "II.Dart语言入门/03.注释", 
         "II.Dart语言入门/04.变量、常量", 
         "II.Dart语言入门/05.命名规则", 
+        "II.Dart语言入门/06.数据类型", 
       ]
     },
     {
