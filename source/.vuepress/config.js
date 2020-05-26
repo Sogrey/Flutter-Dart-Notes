@@ -118,6 +118,8 @@ function genGuideSidebar(isZh) {
         "II.Dart语言入门/06.数据类型", 
         "II.Dart语言入门/07.运算符 条件判断 类型转换", 
         "II.Dart语言入门/08.循环语句 for while do-while break continue", 
+        "II.Dart语言入门/09.集合 List Set Map", 
+        "II.Dart语言入门/10.函数", 
       ]
     },
     {
