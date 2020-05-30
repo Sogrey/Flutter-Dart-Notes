@@ -120,6 +120,7 @@ function genGuideSidebar(isZh) {
         "II.Dart语言入门/08.循环语句 for while do-while break continue", 
         "II.Dart语言入门/09.集合 List Set Map", 
         "II.Dart语言入门/10.函数", 
+        "II.Dart语言入门/11.类与对象", 
       ]
     },
     {
