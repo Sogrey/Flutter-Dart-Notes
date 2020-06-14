@@ -123,6 +123,7 @@ function genGuideSidebar(isZh) {
         "II.Dart语言入门/11.类与对象", 
         "II.Dart语言入门/12.泛型 泛型方法 泛型类 泛型接口", 
         "II.Dart语言入门/13.Dart中的库、自定义库、系统库、第三方库", 
+        "II.Dart语言入门/14.异步编程", 
       ]
     },
     {
