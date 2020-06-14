@@ -128,7 +128,13 @@ function genGuideSidebar(isZh) {
     {
       title: "III.一切皆组件",
       collapsable: true,
-      children: ["III.一切皆组件/"]
+      children: [
+        "III.一切皆组件/",
+        "III.一切皆组件/01. 自定义Widget",
+        "III.一切皆组件/02. Center组件",
+        "III.一切皆组件/03. MaterialApp组件",
+        "III.一切皆组件/04. Scaffold组件",
+      ]
     },
     {
       title: "IV.事件处理",
