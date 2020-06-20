@@ -131,7 +131,17 @@ function genGuideSidebar(isZh) {
       collapsable: true,
       children: [
         "III.一切皆组件/",
-        "III.一切皆组件/01. 自定义Widget",
+        {
+          title: "基础组件（Basic widgets）",
+          collapsable: true,
+          children: [
+            "III.一切皆组件/BasicWidgets/Text",
+            "III.一切皆组件/BasicWidgets/Icon",
+            "III.一切皆组件/BasicWidgets/Image",
+            "III.一切皆组件/BasicWidgets/Button",
+            "III.一切皆组件/BasicWidgets/FlutterLogo",
+          ]
+        },
         "III.一切皆组件/02. Center组件",
         "III.一切皆组件/03. MaterialApp组件",
         "III.一切皆组件/04. Scaffold组件",
