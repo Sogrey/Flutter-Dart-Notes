@@ -9,7 +9,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Start',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.purple,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       home: MyHomePage(title: 'Flutter Widgets'),
@@ -27,18 +27,26 @@ class MyHomePage extends StatefulWidget {
 }
 
 class Item {
-  String text;
+  String title, subTitle, link;
   Color color;
   IconData icon;
 
-  Item(this.icon, this.text, this.color);
+  Item({this.icon, this.title, this.subTitle, this.link, this.color});
 
   IconData getIcon() {
     return this.icon;
   }
 
-  String getText() {
-    return this.text;
+  String getTitle() {
+    return this.title;
+  }
+
+  String getSubtitle() {
+    return this.subTitle;
+  }
+
+  String getLink() {
+    return this.link;
   }
 
   Color getColor() {
@@ -61,11 +69,36 @@ class _MyHomePageState extends State<MyHomePage> {
 
 class CustomListView extends StatelessWidget {
   final data = <Item>[
-    Item(Icons.text_format, 'Text', Colors.purple[300]),
-    Item(Icons.insert_emoticon, 'Icon', Colors.purple[400]),
-    Item(Icons.image, 'Image', Colors.purple[500]),
-    Item(Icons.format_paint, 'Button', Colors.purple[600]),
-    Item(Icons.flag, 'FlutterLogo', Colors.purple[700]),
+    Item(
+        icon: Icons.text_format,
+        title: 'Text',
+        subTitle: 'This is Text widget.',
+        link: 'TextLink',
+        color: Colors.purple[300]),
+    Item(
+        icon: Icons.insert_emoticon,
+        title: 'Icon',
+        subTitle: 'This is Icon widget.',
+        link: 'IconLink',
+        color: Colors.purple[400]),
+    Item(
+        icon: Icons.image,
+        title: 'Image',
+        subTitle: 'This is Image widget.',
+        link: 'ImageLink',
+        color: Colors.purple[500]),
+    Item(
+        icon: Icons.format_paint,
+        title: 'Button',
+        subTitle: 'This is Button widget.',
+        link: 'ButtonLink',
+        color: Colors.purple[600]),
+    Item(
+        icon: Icons.flag,
+        title: 'FlutterLogo',
+        subTitle: 'This is FlutterLogo widget.',
+        link: 'FlutterLogoLink',
+        color: Colors.purple[700]),
   ];
 
   @override
@@ -75,28 +108,44 @@ class CustomListView extends StatelessWidget {
         shrinkWrap: true,
         padding: const EdgeInsets.all(0.0),
         children: data.map((item) {
-          return Container(
-            alignment: Alignment.centerLeft,
-            padding: EdgeInsets.fromLTRB(10, 0, 10, 0),
-            height: 50,
-            width: 80,
-            color: item.getColor(),
-            child: Row(
-              children: <Widget>[
-                Icon(
-                  item.getIcon(),
-                  color: Colors.white,
-                ),
-                Spacer(),
-                Text(
-                  item.getText(),
-                  style: TextStyle(color: Colors.white),
-                ),
-              ],
-            ),
-          );
+          return CustomListTile(item);
         }).toList(),
       ),
+    );
+  }
+}
+
+
+
+class CustomListTile extends StatelessWidget {
+  final Item item;
+
+  CustomListTile(this.item);
+  _onTap(String link) {
+//    print(link);
+  }
+  @override
+  Widget build(BuildContext context) {
+    return ListTile(
+      leading: Container(
+          child: Icon(
+            item.getIcon(),
+            color: Colors.white,
+          ),
+          color: item.getColor(),
+          width: 60,
+          height: 60),
+      trailing: Icon(Icons.chevron_right, color: item.getColor()),
+      title: Text(
+        item.getTitle(),
+        style: TextStyle(color: Colors.black),
+      ),
+      subtitle: Text(
+        item.getSubtitle(),
+        maxLines: 2,
+        overflow: TextOverflow.ellipsis,
+      ),
+      onTap: _onTap(item.getLink()),
     );
   }
 }
