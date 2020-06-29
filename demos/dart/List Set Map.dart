@@ -12,7 +12,7 @@ main() {
 
   print(list2); //[手机, 电脑, 电视, 洗衣机, 电冰箱]
 
-  var list3 = list2.map((l)=> '${l} 是否是家用电器？').toList(); // map 没有修改list2
+  var list3 = list2.map((l) => '${l} 是否是家用电器？').toList(); // map 没有修改list2
 
   print(list3);
 
@@ -32,5 +32,4 @@ main() {
   p['name'] = '李四';
   p['age'] = '23';
   print(p); //{name: 李四, age: 23}
-
 }
