@@ -15,3 +15,4 @@ sidebarDepth: 3
 ## 系列教程
 
 - [《Flutter从0到1构建大前端应用》源码 github](https://github.com/heruijun/FlutterFrom0To1)
+- [《Flutter 实战入门》 Flutter | 老孟](http://laomengit.com/)
