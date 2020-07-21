@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>环境搭建 | Flutter Dart Notes</title>
+    <meta name="description" content="notes">
+    <meta name="generator" content="VuePress 1.3.0">
+    <link rel="icon" href="https://sogrey.github.io/favicon.ico">
+    
+    <link rel="preload" href="/Flutter-Dart-Notes/assets/css/0.styles.7c0f9cb4.css" as="style"><link rel="preload" href="/Flutter-Dart-Notes/assets/js/app.24d304b1.js" as="script"><link rel="preload" href="/Flutter-Dart-Notes/assets/js/2.f34c5231.js" as="script"><link rel="preload" href="/Flutter-Dart-Notes/assets/js/7.fa565dd2.js" as="script"><link rel="prefetch" href="/Flutter-Dart-Notes/assets/js/10.b01f3d4c.js"><link rel="prefetch" href="/Flutter-Dart-Notes/assets/js/11.14979601.js"><link rel="prefetch" href="/Flutter-Dart-Notes/assets/js/12.6495b5af.js"><link rel="prefetch" href="/Flutter-Dart-Notes/assets/js/13.0699df10.js"><link rel="prefetch" href="/Flutter-Dart-Notes/assets/js/14.6b1d7011.js"><link rel="prefetch" href="/Flutter-Dart-Notes/assets/js/15.4daf1e33.js"><link rel="prefetch" href="/Flutter-Dart-Notes/assets/js/16.b8f8132b.js"><link rel="prefetch" href="/Flutter-Dart-Notes/assets/js/17.aeeee9aa.js"><link rel="prefetch" href="/Flutter-Dart-Notes/assets/js/18.ece411d0.js"><link rel="prefetch" href="/Flutter-Dart-Notes/assets/js/19.9e979907.js"><link rel="prefetch" href="/Flutter-Dart-Notes/assets/js/20.8165e999.js"><link rel="prefetch" href="/Flutter-Dart-Notes/assets/js/21.ddfebfcb.js"><link rel="prefetch" href="/Flutter-Dart-Notes/assets/js/22.b286c09d.js"><link rel="prefetch" href="/Flutter-Dart-Notes/assets/js/23.9a5e11ff.js"><link rel="prefetch" href="/Flutter-Dart-Notes/assets/js/24.5deb8bfa.js"><link rel="prefetch" href="/Flutter-Dart-Notes/assets/js/25.4b812d76.js"><link rel="prefetch" href="/Flutter-Dart-Notes/assets/js/26.76ba5b01.js"><link rel="prefetch" href="/Flutter-Dart-Notes/assets/js/27.d061f679.js"><link rel="prefetch" href="/Flutter-Dart-Notes/assets/js/28.6c4899d6.js"><link rel="prefetch" href="/Flutter-Dart-Notes/assets/js/29.ac3ec602.js"><link rel="prefetch" href="/Flutter-Dart-Notes/assets/js/3.f210850f.js"><link rel="prefetch" href="/Flutter-Dart-Notes/assets/js/30.7f094735.js"><link rel="prefetch" href="/Flutter-Dart-Notes/assets/js/31.71b021df.js"><link rel="prefetch" href="/Flutter-Dart-Notes/assets/js/32.d5e6ffb3.js"><link rel="prefetch" href="/Flutter-Dart-Notes/assets/js/33.f2367d5a.js"><link rel="prefetch" href="/Flutter-Dart-Notes/assets/js/34.1047cb53.js"><link rel="prefetch" href="/Flutter-Dart-Notes/assets/js/35.61e0920b.js"><link rel="prefetch" href="/Flutter-Dart-Notes/assets/js/36.282aeb28.js"><link rel="prefetch" href="/Flutter-Dart-Notes/assets/js/37.2524da3a.js"><link rel="prefetch" href="/Flutter-Dart-Notes/assets/js/38.97786901.js"><link rel="prefetch" href="/Flutter-Dart-Notes/assets/js/39.6bd0569b.js"><link rel="prefetch" href="/Flutter-Dart-Notes/assets/js/4.9ca11fd8.js"><link rel="prefetch" href="/Flutter-Dart-Notes/assets/js/40.0fd14318.js"><link rel="prefetch" href="/Flutter-Dart-Notes/assets/js/41.27c665cc.js"><link rel="prefetch" href="/Flutter-Dart-Notes/assets/js/42.f17189eb.js"><link rel="prefetch" href="/Flutter-Dart-Notes/assets/js/43.ea3310c3.js"><link rel="prefetch" href="/Flutter-Dart-Notes/assets/js/44.1d7ac4f0.js"><link rel="prefetch" href="/Flutter-Dart-Notes/assets/js/45.3c9cab4b.js"><link rel="prefetch" href="/Flutter-Dart-Notes/assets/js/46.1fb30f3f.js"><link rel="prefetch" href="/Flutter-Dart-Notes/assets/js/47.4f86431d.js"><link rel="prefetch" href="/Flutter-Dart-Notes/assets/js/48.a5b88a39.js"><link rel="prefetch" href="/Flutter-Dart-Notes/assets/js/49.bad35ad8.js"><link rel="prefetch" href="/Flutter-Dart-Notes/assets/js/5.2162f736.js"><link rel="prefetch" href="/Flutter-Dart-Notes/assets/js/50.7053b3f5.js"><link rel="prefetch" href="/Flutter-Dart-Notes/assets/js/51.7025562c.js"><link rel="prefetch" href="/Flutter-Dart-Notes/assets/js/52.f3ba2761.js"><link rel="prefetch" href="/Flutter-Dart-Notes/assets/js/53.7b533a03.js"><link rel="prefetch" href="/Flutter-Dart-Notes/assets/js/54.8c5d343c.js"><link rel="prefetch" href="/Flutter-Dart-Notes/assets/js/55.e37bf42e.js"><link rel="prefetch" href="/Flutter-Dart-Notes/assets/js/56.167a17be.js"><link rel="prefetch" href="/Flutter-Dart-Notes/assets/js/57.eaa3c7b5.js"><link rel="prefetch" href="/Flutter-Dart-Notes/assets/js/58.622e1ca0.js"><link rel="prefetch" href="/Flutter-Dart-Notes/assets/js/59.78f98973.js"><link rel="prefetch" href="/Flutter-Dart-Notes/assets/js/6.fff3f252.js"><link rel="prefetch" href="/Flutter-Dart-Notes/assets/js/60.00e7c3fb.js"><link rel="prefetch" href="/Flutter-Dart-Notes/assets/js/61.1efaabfa.js"><link rel="prefetch" href="/Flutter-Dart-Notes/assets/js/62.191f6b71.js"><link rel="prefetch" href="/Flutter-Dart-Notes/assets/js/63.7baf0019.js"><link rel="prefetch" href="/Flutter-Dart-Notes/assets/js/8.38d3afed.js"><link rel="prefetch" href="/Flutter-Dart-Notes/assets/js/9.4f713513.js">
+    <link rel="stylesheet" href="/Flutter-Dart-Notes/assets/css/0.styles.7c0f9cb4.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/Flutter-Dart-Notes/" class="home-link router-link-active"><!----> <span class="site-name">Flutter Dart Notes</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/Flutter-Dart-Notes/guide/" class="nav-link router-link-active">
+  指南
+</a></div><div class="nav-item"><a href="/Flutter-Dart-Notes/resources/" class="nav-link">
+  参考资料
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="外链" class="dropdown-title"><span class="title">外链</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://flutter.dev/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Flutter 官网
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="https://flutter.cn/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Flutter 中文网
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="https://github.com/flutter/flutter" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Flutter Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="https://flutter.dev/docs" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Flutter 官方文档
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="https://flutter.dev/showcase" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Flutter 官方示例
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></div></div> <a href="https://github.com/Sogrey/Flutter-Dart-Notes" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/Flutter-Dart-Notes/guide/" class="nav-link router-link-active">
+  指南
+</a></div><div class="nav-item"><a href="/Flutter-Dart-Notes/resources/" class="nav-link">
+  参考资料
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="外链" class="dropdown-title"><span class="title">外链</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://flutter.dev/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Flutter 官网
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="https://flutter.cn/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Flutter 中文网
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="https://github.com/flutter/flutter" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Flutter Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="https://flutter.dev/docs" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Flutter 官方文档
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="https://flutter.dev/showcase" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Flutter 官方示例
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></div></div> <a href="https://github.com/Sogrey/Flutter-Dart-Notes" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>快速入门</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>I.Flutter简介</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/Flutter-Dart-Notes/guide/I.Flutter简介/01.Flutter 发展历史.html" class="sidebar-link">Flutter 发展历史</a></li><li><a href="/Flutter-Dart-Notes/guide/I.Flutter简介/02.面向对象及Dart语言.html" class="sidebar-link">面向对象及Dart语言</a></li><li><a href="/Flutter-Dart-Notes/guide/I.Flutter简介/03.Flutter和其他跨平台框架对比.html" class="sidebar-link">Flutter和其他跨平台框架对比</a></li><li><a href="/Flutter-Dart-Notes/guide/I.Flutter简介/04.环境搭建.html" class="active sidebar-link">环境搭建</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/Flutter-Dart-Notes/guide/I.Flutter简介/04.环境搭建.html#flutter环境搭建配置" class="sidebar-link">Flutter环境搭建配置</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/Flutter-Dart-Notes/guide/I.Flutter简介/04.环境搭建.html#系统配置要求（windows）" class="sidebar-link">系统配置要求（Windows）</a></li><li class="sidebar-sub-header"><a href="/Flutter-Dart-Notes/guide/I.Flutter简介/04.环境搭建.html#获取-flutter-sdk" class="sidebar-link">获取 Flutter SDK</a></li><li class="sidebar-sub-header"><a href="/Flutter-Dart-Notes/guide/I.Flutter简介/04.环境搭建.html#命令行方式安装" class="sidebar-link">命令行方式安装</a></li><li class="sidebar-sub-header"><a href="/Flutter-Dart-Notes/guide/I.Flutter简介/04.环境搭建.html#更新-path-环境变量" class="sidebar-link">更新 path 环境变量</a></li><li class="sidebar-sub-header"><a href="/Flutter-Dart-Notes/guide/I.Flutter简介/04.环境搭建.html#运行-flutter-doctor" class="sidebar-link">运行 flutter doctor</a></li><li class="sidebar-sub-header"><a href="/Flutter-Dart-Notes/guide/I.Flutter简介/04.环境搭建.html#配置事项" class="sidebar-link">配置事项</a></li></ul></li><li class="sidebar-sub-header"><a href="/Flutter-Dart-Notes/guide/I.Flutter简介/04.环境搭建.html#常用命令行" class="sidebar-link">常用命令行</a></li><li class="sidebar-sub-header"><a href="/Flutter-Dart-Notes/guide/I.Flutter简介/04.环境搭建.html#遇到问题" class="sidebar-link">遇到问题</a></li><li class="sidebar-sub-header"><a href="/Flutter-Dart-Notes/guide/I.Flutter简介/04.环境搭建.html#参考" class="sidebar-link">参考</a></li></ul></li><li><a href="/Flutter-Dart-Notes/guide/I.Flutter简介/05.hello-world.html" class="sidebar-link">Flutter初体验之Helloworld</a></li><li><a href="/Flutter-Dart-Notes/guide/I.Flutter简介/06.Flutter升级.html" class="sidebar-link">Flutter 升级</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>II.Dart语言入门</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>III.一切皆组件</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>IV.事件处理</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>V.动画</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>VI.网络</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>VII.路由</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>VIII.持久化</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>IX.插件&amp;混合工程</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>X.Q&amp;A</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="环境搭建"><a href="#环境搭建" class="header-anchor">#</a> 环境搭建</h1> <h2 id="flutter环境搭建配置"><a href="#flutter环境搭建配置" class="header-anchor">#</a> Flutter环境搭建配置</h2> <h3 id="系统配置要求（windows）"><a href="#系统配置要求（windows）" class="header-anchor">#</a> 系统配置要求（Windows）</h3> <p>要想安装和运行 Flutter，你的开发环境至少应该满足如下的需求：</p> <ul><li><p>操作系统：Windows 7 SP1 或更高的版本（64 位操作系统）。</p></li> <li><p>磁盘空间：除安装 IDE 和一些工具之外还应有至少 400 MB 的空间。</p></li> <li><p>工具：要让 Flutter 在你的开发环境中正常使用，依赖于以下的工具：</p> <ul><li><p>Windows PowerShell 5.0 或者更高的版本（Windows 10 中已经预装了）</p></li> <li><p>Git for Windows 2.x，并且勾选从 Windows 命令提示符使用 Git 选项。</p> <p>如果 Windows 版的 Git 已经安装过了，那么请确保能从命令提示符或者 PowerShell 中直接执行 git 命令。</p></li></ul></li></ul> <p>摘自：<a href="https://flutter.cn/docs/get-started/install/windows" target="_blank" rel="noopener noreferrer">在 Windows 操作系统上安装和配置 Flutter 开发环境<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <h3 id="获取-flutter-sdk"><a href="#获取-flutter-sdk" class="header-anchor">#</a> 获取 Flutter SDK</h3> <h4 id="下载安装包"><a href="#下载安装包" class="header-anchor">#</a> 下载安装包</h4> <p><strong>备忘</strong> 请注意，类似 7-Zip 等解压工具默认情况下是不解压隐藏文件的，这可能会导致你下载的 Flutter SDK 是不完整的，请参加下一小节的说明，通过命令行方式安装。</p> <ol><li><p>下载下面的安装包以获取最新版本 stable 的 Flutter SDK</p> <p><a href="https://storage.flutter-io.cn/flutter_infra/releases/stable/windows/flutter_windows_v1.12.13+hotfix.7-stable.zip" target="_blank" rel="noopener noreferrer">flutter_windows_v1.12.13+hotfix.7-stable.zip<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <p><a href="https://flutter.cn/docs/get-started/install/windows#%E4%B8%8B%E8%BD%BD%E5%AE%89%E8%A3%85%E5%8C%85" target="_blank" rel="noopener noreferrer">最新下载地址<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <p>要查看其他发行通道和以往的版本，请参阅 <a href="https://flutter.cn/docs/development/tools/sdk/releases" target="_blank" rel="noopener noreferrer">SDK 版本列表<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> 页面。</p></li> <li><p>将压缩包解压，然后把其中的 <code>flutter</code> 目录整个放在你预想的 Flutter SDK 安装目录中（比如 <code>C:\flutter</code>；请勿将该目录放在一些需要额外操作权限的目录，比如 <code>C:\Program Files\</code>）。</p></li> <li><p>找到 <code>flutter</code> 目录中的 <strong>flutter_console.bat</strong> 文件，双击执行该批处理脚本。</p></li></ol> <h3 id="命令行方式安装"><a href="#命令行方式安装" class="header-anchor">#</a> 命令行方式安装</h3> <ul><li>打开命令行窗口，cd 到你想安装 Flutter SDK 的目录，（比如 <code>C:\flutter</code>，请勿将该目录放在一些需要额外操作权限的目录，比如 <code>C:\Program Files\</code>）。</li> <li>运行 <code>git clone</code> 命令，下面的命令是用来安装稳定构建渠道的 Flutter SDK，要升级查看其他构建渠道的 Flutter 版本，请参阅 <a href="https://flutter.cn/docs/development/tools/sdk/upgrading" target="_blank" rel="noopener noreferrer">升级 Flutter<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>。</li></ul> <div class="language- extra-class"><pre class="language-text"><code>git clone -b stable https://github.com/flutter/flutter.git
+</code></pre></div><ul><li>定位并打开 <code>flutter</code> 的文件夹，双击运行 <strong>flutter_console.bat</strong> 开始安装。</li></ul> <p>步骤 1 和 2 可以被替换。如果你不想安装固定版本的安装包。 Flutter SDK 是免费且开源的，你可以从 GitHub 上的 <a href="https://github.com/flutter/flutter" target="_blank" rel="noopener noreferrer">Flutter repo<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> 获取源代码，并根据需要更改分支或标签。</p> <div class="language- extra-class"><pre class="language-text"><code>$ git clone https://github.com/flutter/flutter.git
+</code></pre></div><p>现在你可以在控制台当中使用 Flutter 的命令了。</p> <h3 id="更新-path-环境变量"><a href="#更新-path-环境变量" class="header-anchor">#</a> 更新 path 环境变量</h3> <p>如果你想要在普通的 Windows 控制台中使用 Flutter 命令，那就需要按照下面的步骤来将 Flutter 的二进制文件路径加入到 <code>PATH</code> 环境变量。</p> <ul><li>在开始菜单的搜索功能键入“env”，然后选择 <strong>编辑当前用户的环境变量</strong></li> <li>在 <strong>用户变量</strong> 一栏中，检查是否有 <strong>Path</strong> 这个条目：
+<ul><li>如果存在，直接把 <code>flutter\bin</code> 目录的完整路径以 <code>;</code> 作为分隔加到已有的值后面。</li> <li>如果不存在的话，在用户环境变量中创建一个新的 <code>Path</code> 变量，然后将 <code>flutter\bin</code> 所在的完整路径作为新变量的值。</li></ul></li></ul> <p>注意，你需要关闭和重新启动已经打开的各个控制台窗口，这样下次启动控制台时才能访问到刚才修改的变量。</p> <h3 id="运行-flutter-doctor"><a href="#运行-flutter-doctor" class="header-anchor">#</a> 运行 <code>flutter doctor</code></h3> <p>在将 <code>Path</code> 变量更新后，打开一个新的控制台窗口，然后将下面的命令输入进去执行。如果它提示有任何的平台相关依赖，那么你就需要按照指示完成这些配置：</p> <div class="language- extra-class"><pre class="language-text"><code>C:\flutter&gt;flutter doctor
+</code></pre></div><p>上述命令会检查你的现有环境，然后把检测结果以报告形式呈现出来。仔细阅读它显示的内容，检查是否有尚未安装的软件或是有其他的步骤需要完成（通常会以<strong>粗体</strong>呈现）。</p> <p>比如：</p> <div class="language- extra-class"><pre class="language-text"><code>
+        ######## ##       ##     ## ######## ######## ######## ########
+        ##       ##       ##     ##    ##       ##    ##       ##     ##
+        ##       ##       ##     ##    ##       ##    ##       ##     ##
+        ######   ##       ##     ##    ##       ##    ######   ########
+        ##       ##       ##     ##    ##       ##    ##       ##   ##
+        ##       ##       ##     ##    ##       ##    ##       ##    ##
+        ##       ########  #######     ##       ##    ######## ##     ##
+
+
+ WELCOME to the Flutter Console.
+ ===============================================================================
+
+ Use the console below this message to interact with the &quot;flutter&quot; command.
+ Run &quot;flutter doctor&quot; to check if your system is ready to run Flutter apps.
+ Run &quot;flutter create &lt;app_name&gt;&quot; to create a new Flutter project.
+
+ Run &quot;flutter help&quot; to see all available commands.
+
+ Want to use an IDE to interact with Flutter? https://flutter.dev/ide-setup/
+
+ Want to run the &quot;flutter&quot; command from any Command Prompt or PowerShell window?
+ Add Flutter to your PATH: https://flutter.dev/setup-windows/#update-your-path
+
+ ===============================================================================
+
+D:\Android\FlutterSDK\flutter&gt;flutter doctor
+Downloading Material fonts...                                       1.4s
+Downloading Gradle Wrapper...                                       0.6s
+Downloading package sky_engine...                                   1.2s
+Downloading flutter_patched_sdk tools...                            3.0s
+Downloading flutter_patched_sdk_product tools...                    2.7s
+Downloading windows-x64 tools...                                    5.5s
+Downloading windows-x64/font-subset tools...                        3.1s
+Downloading android-arm-profile/windows-x64 tools...                2.6s
+Downloading android-arm-release/windows-x64 tools...                1.2s
+Downloading android-arm64-profile/windows-x64 tools...              1.5s
+Downloading android-arm64-release/windows-x64 tools...              1.8s
+Downloading android-x64-profile/windows-x64 tools...                1.5s
+Downloading android-x64-release/windows-x64 tools...                1.4s
+Doctor summary (to see all details, run flutter doctor -v):
+[√] Flutter (Channel master, v1.15.2-pre.28, on Microsoft Windows [Version 10.0.18363.592], locale zh-CN)
+[X] Android toolchain - develop for Android devices
+    X Unable to locate Android SDK.
+      Install Android Studio from: https://developer.android.com/studio/index.html
+      On first launch it will assist you in installing the Android SDK components.
+      (or visit https://flutter.dev/setup/#android-setup for detailed instructions).
+      If the Android SDK has been installed to a custom location, set ANDROID_SDK_ROOT to that location.
+      You may also want to add it to your PATH environment variable.
+
+[!] Android Studio (version 3.0)
+    X Flutter plugin not installed; this adds Flutter specific functionality.
+    X Dart plugin not installed; this adds Dart specific functionality.
+[√] Android Studio (version 3.5)
+[!] Connected device
+    ! No devices available
+
+! Doctor found issues in 3 categories.
+
+D:\Android\FlutterSDK\flutter&gt;
+</code></pre></div><p>可以看出我有三项未通过：</p> <ul><li><div class="language- extra-class"><pre class="language-text"><code>[X] Android toolchain - develop for Android devices
+    X Unable to locate Android SDK.
+      Install Android Studio from: https://developer.android.com/studio/index.html
+      On first launch it will assist you in installing the Android SDK components.
+      (or visit https://flutter.dev/setup/#android-setup for detailed instructions).
+      If the Android SDK has been installed to a custom location, set ANDROID_SDK_ROOT to that location.
+      You may also want to add it to your PATH environment variable.
+</code></pre></div><p>这条表示我需要把我本地Android SDK路径添加到环境变量中，命名为<code>ANDROID_SDK_ROOT</code>，路径指向Android SDK路径根目录。</p> <p>我们按照如上添加环境变量之后提示:</p> <div class="language- extra-class"><pre class="language-text"><code>[!] Android toolchain - develop for Android devices (Android SDK version 29.0.2)
+    ! Some Android licenses not accepted.  To resolve this, run: flutter doctor --android-licenses
+</code></pre></div><p>可根据提示或参考<a href="#%E9%81%87%E5%88%B0%E9%97%AE%E9%A2%98">遇到问题</a>第3条解决。</p></li> <li><div class="language- extra-class"><pre class="language-text"><code>[!] Android Studio (version 3.0)
+    X Flutter plugin not installed; this adds Flutter specific functionality.
+    X Dart plugin not installed; this adds Dart specific functionality.
+[√] Android Studio (version 3.5)
+</code></pre></div><p>我本地安装了两个不同版本Android Studio 3.0 和3.5，我使用的是3.5版本，所以3.0版本不通过我们不予理会。</p></li> <li><div class="language- extra-class"><pre class="language-text"><code>[!] Connected device
+    ! No devices available
+</code></pre></div><p>这条表示我们本地没有可用设备连接，可以创建Android  或iOS虚拟机或链接真机即可。</p></li></ul> <p>处理完以上异常，环境就算配置完成了。</p> <h3 id="配置事项"><a href="#配置事项" class="header-anchor">#</a> 配置事项</h3> <ul><li><p>配置国内镜像</p> <p>如果你在国内使用 Flutter，那么你可能需要找一个与官方同步的可信的镜像站点，帮助你的 Flutter 命令行工具到该镜像站点下载其所需的资源。
+你需要为此设置两个环境变量: PUB_HOSTED_URL 和 FLUTTER_STORAGE_BASE_URL，然后再运行 Flutter 命令行工具，查看<a href="https://flutter-io.cn/community/china" target="_blank" rel="noopener noreferrer">设置教程<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>。</p></li></ul> <div class="language- extra-class"><pre class="language-text"><code>  ### Flutter 社区
+
+  FLUTTER_STORAGE_BASE_URL: https://storage.flutter-io.cn
+  PUB_HOSTED_URL: https://pub.flutter-io.cn
+
+  ### 清华大学 TUNA 协会
+
+  FLUTTER_STORAGE_BASE_URL: https://mirrors.tuna.tsinghua.edu.cn/flutter
+  PUB_HOSTED_URL: https://mirrors.tuna.tsinghua.edu.cn/dart-pub
+</code></pre></div><blockquote><p>注意：我们无法保证这些镜像网站得以长期维护和运行，请慎重选择一些可信的镜像网站。</p></blockquote> <p>摘自：<a href="https://flutter.cn/" target="_blank" rel="noopener noreferrer">https://flutter.cn/<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <ul><li><p>配置Gradle工具和环境变量</p></li> <li><p>配置JDK和SDK环境，注意安装SDK时需要同意Android license</p></li> <li><p>Flutter打开很慢，需要配置以加快打开速度</p> <p>解决方法：Android Studio 安装目录下的bin目录， 找到idea.properties文件，在文件最后追加代码<code>disable.android.first.run=true</code>,然后保存。</p></li> <li><p>配置cpu支持， 解决部分机型兼容性问题</p> <p>解决方法：根目录/android/app/build.gradle, 在android节点里面添加以下内容：</p> <div class="language-gradle extra-class"><pre class="language-text"><code>splits {
+       abi{include'x86', 'armeabi-v7a', 'x86_64'}
+}
+</code></pre></div><p>缺少哪个cpu支持 就加上哪个cpu。</p></li></ul> <h2 id="常用命令行"><a href="#常用命令行" class="header-anchor">#</a> 常用命令行</h2> <p>命令行运行<code>flutter -h</code>查看帮助：</p> <div class="language- extra-class"><pre class="language-text"><code>λ flutter -h
+Manage your Flutter app development.
+管理你的Flutter应用程序开发。
+
+Common commands:
+
+  flutter create &lt;output directory&gt;
+    Create a new Flutter project in the specified directory.
+    在指定的目录中创建一个新的Flutter项目。
+
+  flutter run [options]
+    Run your Flutter application on an attached device or in an emulator.
+    在指定的目录中创建一个新的Flutter项目。
+
+Usage: flutter &lt;command&gt; [arguments]
+
+Global options:
+-h, --help                  Print this usage information.打印此使用信息。
+-v, --verbose               Noisy logging, including all shell commands executed.
+                            日志记录，包括所有执行的shell命令。
+                            If used with --help, shows hidden options.
+                            如果与`--help`一起使用，则显示隐藏选项。
+
+-d, --device-id             Target device id or name (prefixes allowed).
+                            目标设备id或名称（允许前缀）。
+    --version               Reports the version of this tool.
+                            查看版本
+    --suppress-analytics    Suppress analytics reporting when this command runs.
+                            运行此命令时禁止显示分析报告。
+    --packages              Path to your &quot;.packages&quot; file.
+                            指定Path to your &quot;.packages&quot; file.
+                            (required, since the current directory does not contain a &quot;.packages&quot;                                 file)
+                            （必需，当前目录不包含“.packages”文件）
+
+Available commands:
+  analyze                  Analyze the project's Dart code.
+                           分析项目的Dart代码。
+  assemble                 Assemble and build flutter resources.
+                           组装和构造Flutter资源。
+  attach                   Attach to a running application.
+                           附加到正在运行的应用程序。
+  bash-completion          Output command line shell completion setup scripts.
+                           输出命令行shell完成设置脚本。
+  build                    Flutter build commands.
+                           Flutter构建命令
+  channel                  List or switch flutter channels.
+                           列出或切换Flutter通道。
+  clean                    Delete the build/ and .dart_tool/ directories.
+                           删除build/和.dart_tool/目录。
+  config                   Configure Flutter settings.
+                           配置flutter设置。
+  create                   Create a new Flutter project.
+                           创建一个新的flutter项目。
+  devices                  List all connected devices.
+                           列出所有设备。
+  doctor                   Show information about the installed tooling.
+                           显示有关已安装工具的信息。
+  drive                    Runs Flutter Driver tests for the current project.
+                           为当前项目运行flutter驱动器测试。
+  emulators                List, launch and create emulators.
+                           列出、启动和创建模拟器。
+  format                   Format one or more dart files.
+                           格式化一个或多个dart文件。
+  generate                 run code generators.
+                           运行代码生成器。
+  help                     Display help information for flutter.
+                           显示flutter的帮助信息。
+  install                  Install a Flutter app on an attached device.
+                           在连接的设备上安装flutter应用程序。
+  logs                     Show log output for running Flutter apps.
+                           显示运行flutter应用程序的日志输出。
+  make-host-app-editable   Moves host apps from generated directories to non-generated directories so                            that they can be edited by developers.
+                           将宿主应用程序从生成的目录移动到非生成的目录，以便开发人员可以编辑它们。
+  precache                 Populates the Flutter tool's cache of binary artifacts.
+                           填充flutter工具的二进制工件缓存。
+  pub                      Commands for managing Flutter packages.
+                           管理flutter包的命令。
+  run                      Run your Flutter app on an attached device.
+                           在连接的设备上运行Flutter应用程序。
+  screenshot               Take a screenshot from a connected device.
+                           从连接的设备上截图。
+  test                     Run Flutter unit tests for the current project.
+                           为当前项目运行flutter单元测试。
+  upgrade                  Upgrade your copy of Flutter.
+                           升级你的Flutter副本。
+  version                  List or switch flutter versions.
+                           列出或切换flutter版本。
+
+Run &quot;flutter help &lt;command&gt;&quot; for more information about a command.
+Run &quot;flutter help -v&quot; for verbose help output, including less commonly used options.
+</code></pre></div><p>常用命令有：</p> <p><img src="/Flutter-Dart-Notes/assets/img/flutter-command.7f9a04e8.png" alt="flutter-command"></p> <h2 id="遇到问题"><a href="#遇到问题" class="header-anchor">#</a> 遇到问题</h2> <ol><li><code>flutter upgrade</code>出现的红色错误提示。</li></ol> <p>如：BitsTransformer或CategoryInfo之类关键字。主要是网络原因，从网络获取依赖时出错。</p> <ol start="2"><li><code>flutter doctor( -v)</code>出现的红色错误提示。</li></ol> <p>如：BitsTransformer或CategoryInfo之类关键字。</p> <ol start="3"><li><code>Some Android licenses not accepted.</code> 或 <code>Android licenses status unknown</code>错误提示。</li></ol> <p>解决：命令行输入<code>flutter doctor --android-licenses</code>，根据提示输入<code>y</code>即可。</p> <h2 id="参考"><a href="#参考" class="header-anchor">#</a> 参考</h2> <ul><li><a href="https://flutter.cn/docs/get-started/install/windows" target="_blank" rel="noopener noreferrer">在 Windows 操作系统上安装和配置 Flutter 开发环境<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/Sogrey/Flutter-Dart-Notes/edit/master/source/guide/I.Flutter简介/04.环境搭建.md" target="_blank" rel="noopener noreferrer">在 GitHub 上编辑此页</a> <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></div> <div class="last-updated"><span class="prefix">上次更新:</span> <span class="time">2020-2-9 2:25:51</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/Flutter-Dart-Notes/guide/I.Flutter简介/03.Flutter和其他跨平台框架对比.html" class="prev">
+        Flutter和其他跨平台框架对比
+      </a></span> <span class="next"><a href="/Flutter-Dart-Notes/guide/I.Flutter简介/05.hello-world.html">
+        Flutter初体验之Helloworld
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/Flutter-Dart-Notes/assets/js/app.24d304b1.js" defer></script><script src="/Flutter-Dart-Notes/assets/js/2.f34c5231.js" defer></script><script src="/Flutter-Dart-Notes/assets/js/7.fa565dd2.js" defer></script>
+  </body>
+</html>
